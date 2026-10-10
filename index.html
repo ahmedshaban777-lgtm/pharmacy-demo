@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مخزن الشفاء | أدوية ومستحضرات تجميل - اطلب ويصلك لباب البيت</title>
+<meta name="description" content="مخزن الشفاء: أدوية، كوزمتكس، عناية بالبشرة، ومستحضرات أطفال. منتجات أصلية 100% وتوصيل سريع لباب البيت. اطلب على واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0b8a5f; --green2:#0a6e4d; --mint:#e7f6f0; --mint2:#d2eee2;
+  --gold:#c9a24b; --cream:#fdf9f1; --ink:#17281f; --muted:#5f7268;
+  --wa:#22c15e; --wa2:#1da851; --line:#e2ece7; --card:#fff;
+  --radius:18px; --shadow:0 10px 30px rgba(11,138,95,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+h1,h2,h3,h4{font-family:'Cairo',sans-serif;line-height:1.35}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+.section{padding:80px 0}
+.section-head{text-align:center;max-width:620px;margin:0 auto 48px}
+.section-head .kicker{display:inline-block;background:var(--mint2);color:var(--green2);font-weight:700;font-size:.85rem;padding:6px 16px;border-radius:999px;margin-bottom:14px}
+.section-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:800;color:var(--ink)}
+.section-head p{color:var(--muted);margin-top:10px}
+
+/* Nav */
+nav{position:fixed;inset-inline:0;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Cairo';font-weight:800;font-size:1.15rem;color:var(--green2)}
+.brand .logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--green),#2ec98a);display:grid;place-items:center;font-size:1.2rem;color:#fff}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:var(--muted);font-weight:500;font-size:.95rem;transition:color .2s}
+.nav-links a:hover{color:var(--green)}
+.nav-cta{background:var(--green);color:#fff;font-weight:800;padding:9px 20px;border-radius:999px;font-size:.9rem;transition:transform .15s,box-shadow .15s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(11,138,95,.35)}
+.burger{display:none;background:none;border:none;color:var(--green2);font-size:1.5rem;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;padding:150px 0 90px;background:radial-gradient(800px 420px at 88% 0%,rgba(46,201,138,.16),transparent 60%),radial-gradient(600px 400px at 5% 100%,rgba(201,162,75,.12),transparent 55%),linear-gradient(170deg,#ffffff 0%,var(--mint) 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:7px 16px;border-radius:999px;font-size:.85rem;color:var(--green2);font-weight:700}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3.1rem);font-weight:900;margin:18px 0 14px;color:var(--ink)}
+.hero h1 .hl{color:var(--green);position:relative}
+.hero p.lead{color:var(--muted);font-size:1.08rem;max-width:520px}
+.hero-btns{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;padding:14px 28px;border-radius:14px;font-size:1rem;transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;font-family:'Cairo'}
+.btn-green{background:linear-gradient(135deg,var(--green),#2ec98a);color:#fff}
+.btn-green:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(11,138,95,.35)}
+.btn-ghost{background:#fff;color:var(--green2);border:1.5px solid var(--mint2)}
+.btn-ghost:hover{border-color:var(--green)}
+.hero-trust{display:flex;gap:26px;margin-top:36px;flex-wrap:wrap}
+.hero-trust .t{display:flex;align-items:center;gap:9px;font-weight:700;font-size:.92rem;color:var(--ink)}
+.hero-trust .ic{width:36px;height:36px;border-radius:11px;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;font-size:1.1rem}
+.hero-visual{position:relative}
+.hero-visual .board{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:24px}
+.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.mini{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center}
+.mini .pic{font-size:2.4rem;margin-bottom:8px}
+.mini b{display:block;font-size:.9rem;color:var(--ink)}
+.mini span{color:var(--green);font-weight:800;font-size:.85rem}
+.hero-visual .float{position:absolute;background:#fff;border-radius:14px;padding:10px 16px;font-size:.82rem;font-weight:700;box-shadow:0 14px 30px rgba(11,138,95,.18);display:flex;align-items:center;gap:8px;border:1px solid var(--line)}
+.float.f1{top:-18px;inset-inline-start:-14px}
+.float.f2{bottom:-18px;inset-inline-end:-10px}
+.float .dot{width:9px;height:9px;border-radius:50%;background:var(--wa)}
+
+/* Categories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cat{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:30px 20px;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer}
+.cat:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.cat .icon{width:66px;height:66px;margin:0 auto 14px;border-radius:20px;display:grid;place-items:center;font-size:2rem;background:linear-gradient(135deg,var(--mint),var(--mint2))}
+.cat h3{font-size:1.05rem;font-weight:800;color:var(--ink)}
+.cat p{color:var(--muted);font-size:.86rem;margin-top:6px}
+
+/* Products */
+.products{background:#fff}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.prod{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.prod:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.prod .thumb{aspect-ratio:1/.82;display:grid;place-items:center;font-size:3.4rem;position:relative}
+.prod .thumb .off{position:absolute;top:12px;inset-inline-start:12px;background:#e0452c;color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:999px}
+.prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
+.prod .catname{font-size:.75rem;color:var(--green);font-weight:700}
+.prod h3{font-size:.98rem;font-weight:800;color:var(--ink);margin:4px 0 8px}
+.prod .price-row{margin-top:auto;display:flex;align-items:baseline;gap:8px}
+.prod .price{font-family:'Cairo';font-weight:900;font-size:1.25rem;color:var(--green2)}
+.prod .old{font-size:.85rem;color:#b8c4bd;text-decoration:line-through}
+.prod .order{margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;font-weight:800;font-size:.88rem;padding:10px;border-radius:11px;transition:background .2s}
+.prod .order:hover{background:var(--wa2)}
+.prod .order svg{width:17px;height:17px;fill:#fff}
+
+/* Offers */
+.offers{background:linear-gradient(160deg,var(--green2),var(--green));color:#fff}
+.offers .section-head h2{color:#fff}
+.offers .section-head .kicker{background:rgba(255,255,255,.15);color:#fff}
+.offers .section-head p{color:#cfe9dc}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.offer{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:26px;backdrop-filter:blur(6px)}
+.offer .pct{font-family:'Cairo';font-weight:900;font-size:2.2rem;color:#ffd257}
+.offer h3{font-size:1.05rem;font-weight:800;margin:8px 0 6px}
+.offer p{color:#cfe9dc;font-size:.9rem}
+.offer .code{display:inline-block;margin-top:14px;background:rgba(255,255,255,.12);border:1px dashed rgba(255,255,255,.4);padding:6px 14px;border-radius:9px;font-weight:700;font-size:.85rem;letter-spacing:1px}
+
+/* Branches */
+.branches-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.branch{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.branch h3{font-size:1.1rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.branch h3 .ic{width:38px;height:38px;border-radius:11px;background:var(--mint);display:grid;place-items:center;font-size:1.1rem}
+.branch ul{list-style:none;display:grid;gap:10px;color:var(--muted);font-size:.94rem}
+.branch li{display:flex;gap:10px;align-items:flex-start}
+.branch li::before{content:"•";color:var(--green);font-weight:900}
+.map-ph{margin-top:24px;background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 14px,var(--mint2) 14px,var(--mint2) 28px);border:1px solid var(--line);border-radius:var(--radius);min-height:220px;display:grid;place-items:center;text-align:center;color:var(--green2)}
+.map-ph .pin{font-size:2.6rem}
+.map-ph b{display:block;font-size:1rem;margin-top:6px}
+.map-ph span{font-size:.85rem;color:var(--muted)}
+
+/* CTA */
+.cta{background:linear-gradient(150deg,#0a6e4d,#0b8a5f);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,210,87,.18),transparent 70%);top:-200px;inset-inline-end:-120px}
+.cta h2{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:900;position:relative}
+.cta p{color:#cfe9dc;max-width:540px;margin:14px auto 30px;position:relative}
+.btn-wa{background:var(--wa);color:#fff;font-size:1.08rem;padding:16px 36px;border-radius:16px;position:relative}
+.btn-wa:hover{background:var(--wa2);transform:translateY(-3px);box-shadow:0 14px 30px rgba(34,193,94,.4)}
+.cta .alt{display:block;margin-top:16px;color:#a8d8c2;font-size:.88rem;position:relative}
+
+footer{background:#0a3d2b;color:#9cc7b3;padding:28px 0;text-align:center;font-size:.88rem}
+footer b{color:#dff0e7}
+
+.wa-float{position:fixed;bottom:22px;inset-inline-end:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 26px rgba(34,193,94,.45);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .cats,.prod-grid{grid-template-columns:repeat(2,1fr)}
+  .offer-grid,.branches-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:126px}
+  .hero-visual{max-width:420px;margin-inline:auto;width:100%}
+  .nav-links{position:fixed;top:66px;inset-inline:0;background:#fff;flex-direction:column;padding:18px 5%;gap:16px;display:none;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+}
+@media (max-width:560px){
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .prod .thumb{font-size:2.6rem}
+  .section{padding:60px 0}
+  .hero-trust{gap:16px}
+  .float.f1{inset-inline-start:0}
+  .float.f2{inset-inline-end:0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#" class="brand"><span class="logo">✚</span> مخزن الشفاء</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#cats">الأقسام</a></li>
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="#offers">العروض</a></li>
+      <li><a href="#branches">الفروع</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">اطلب الآن</a>
+    <button class="burger" id="burger" aria-label="القائمة">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">✅ منتجات أصلية ١٠٠٪ - بتواريخ صلاحية مضمونة</span>
+      <h1>كل اللي بيتك محتاجه<br><span class="hl">يوصلك لباب البيت</span></h1>
+      <p class="lead">أدوية، كوزمتكس، عناية بالبشرة، ومستحضرات أطفال - كلها من مكان واحد وبأسعار الجملة. ابعت طلبك على واتساب والتوصيل علينا.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-green">اطلب على واتساب 🛵</a>
+        <a href="#products" class="btn btn-ghost">شوف المنتجات</a>
+      </div>
+      <div class="hero-trust">
+        <div class="t"><span class="ic">🛵</span> توصيل في نفس اليوم</div>
+        <div class="t"><span class="ic">💵</span> الدفع كاش عند الاستلام</div>
+        <div class="t"><span class="ic">↩️</span> استبدال مجاني</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="float f1"><span class="dot"></span> التوصيل متاح الآن</div>
+      <div class="board">
+        <div class="mini-grid">
+          <div class="mini"><div class="pic">💊</div><b>أدوية وفيتامينات</b><span>من ٢٥ ج</span></div>
+          <div class="mini"><div class="pic">💄</div><b>كوزمتكس</b><span>من ٧٥ ج</span></div>
+          <div class="mini"><div class="pic">🧴</div><b>عناية بالبشرة</b><span>من ٦٠ ج</span></div>
+          <div class="mini"><div class="pic">🍼</div><b>مستحضرات أطفال</b><span>من ٤٥ ج</span></div>
+        </div>
+      </div>
+      <div class="float f2">⭐ ٤.٩ - تقييم ٢٬٣٠٠ عميل</div>
+    </div>
+  </div>
+</header>
+
+<!-- CATEGORIES -->
+<section class="section" id="cats">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">الأقسام</span>
+      <h2>كل احتياجات البيت في ٤ أقسام</h2>
+      <p>اختار القسم وابعتلي اللي محتاجه - ولو مش لاقي حاجة اسأل عليها وهاتوفرهالك</p>
+    </div>
+    <div class="cats">
+      <a href="#products" class="cat reveal"><div class="icon">💊</div><h3>أدوية وفيتامينات</h3><p>مسكنات، فيتامينات، مكملات غذائية، وأدوية الاستعمال اليومي</p></a>
+      <a href="#products" class="cat reveal"><div class="icon">💄</div><h3>كوزمتكس</h3><p>مكياج، أحمر شفايف، ماسكرا، وبراندات أصلية مضمونة</p></a>
+      <a href="#products" class="cat reveal"><div class="icon">🧴</div><h3>عناية بالبشرة</h3><p>غسول، مرطبات، سيروم، وواقي شمس لكل أنواع البشرة</p></a>
+      <a href="#products" class="cat reveal"><div class="icon">🍼</div><h3>مستحضرات أطفال</h3><p>حفاضات، ألبان أطفال، كريمات، ومستلزمات البيبي</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section products" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">الكتالوج</span>
+      <h2>الأكثر طلبًا عندنا</h2>
+      <p>دوس «اطلب» على أي منتج وهيفتح واتساب برسالة جاهزة - كمّل باقي طلبك في نفس الرسالة</p>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+    <p style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:26px">دي عينة من الكتالوج - عندنا أكتر من ١٬٥٠٠ صنف في المخزن. اسأل على أي صنف مش موجود هنا.</p>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="section offers" id="offers">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">عروض الأسبوع</span>
+      <h2>خصومات حقيقية مش كلام</h2>
+      <p>العروض بتتجدد كل أسبوع - اطلب قبل نهاية العرض</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer reveal"><div class="pct">-٢٠٪</div><h3>على كل العناية بالبشرة</h3><p>غسول + مرطب + واقي شمس من نفس البراند</p><span class="code">كود: SKIN20</span></div>
+      <div class="offer reveal"><div class="pct">٢+١</div><h3>حفاضات الأطفال</h3><p>اشتري عبوتين والتالتة هدية على كل المقاسات</p><span class="code">كود: BABY3</span></div>
+      <div class="offer reveal"><div class="pct">🛵</div><h3>توصيل مجاني</h3><p>لأي طلب فوق ٥٠٠ جنيه داخل المدينة</p><span class="code">تلقائي عند الطلب</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section class="section" id="branches">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">الفروع والمواعيد</span>
+      <h2>قريبين منك دايمًا</h2>
+    </div>
+    <div class="branches-grid">
+      <div class="branch reveal">
+        <h3><span class="ic">📍</span> الفرع الرئيسي - وسط البلد</h3>
+        <ul>
+          <li>العنوان: ١٢ شارع الجمهورية، وسط البلد (عنوان تجريبي)</li>
+          <li>المواعيد: يوميًا من ٩ صباحًا لـ ١٢ منتصف الليل</li>
+          <li>التوصيل: كل مناطق المدينة خلال ٦٠-٩٠ دقيقة</li>
+          <li>التليفون: <bdi dir="ltr">0100 000 0000</bdi> (رقم تجريبي)</li>
+        </ul>
+      </div>
+      <div class="branch reveal">
+        <h3><span class="ic">📍</span> فرع التجمع</h3>
+        <ul>
+          <li>العنوان: ٤٥ شارع التسعين، التجمع الخامس (عنوان تجريبي)</li>
+          <li>المواعيد: يوميًا من ١٠ صباحًا لـ ١١ مساءً</li>
+          <li>صيدلي متاح للاستشارة طوال المواعيد</li>
+          <li>نفس رقم الطلبات: <bdi dir="ltr">0100 000 0000</bdi></li>
+        </ul>
+      </div>
+    </div>
+    <div class="map-ph reveal">
+      <div>
+        <div class="pin">🗺️</div>
+        <b>الخريطة التفاعلية</b>
+        <span>(مساحة مخصصة لخريطة جوجل - تتضمن عند تسليم الموقع للعميل)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta" id="contact">
+  <div class="wrap reveal">
+    <h2>محتاج حاجة من المخزن؟ ابعت طلبك دلوقتي</h2>
+    <p>رسالة واتساب واحدة كفاية - اكتب اللي محتاجه وهنرد عليك بالسعر والتوفر ووقت التوصيل خلال دقائق.</p>
+    <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AE%D8%B2%D9%86%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1" target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" style="vertical-align:-4px"><path d="M12 .5C5.7.5.6 5.6.6 11.9c0 2 .5 4 1.5 5.7L.5 23.5l6-1.6c1.7.9 3.5 1.4 5.5 1.4 6.3 0 11.4-5.1 11.4-11.4S18.3.5 12 .5zm0 20.9c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.3 9.3 0 0 1-1.4-5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm5.2-7c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      اطلب على واتساب
+    </a>
+    <span class="alt">أو اتصل مباشرة: <bdi dir="ltr">0100 000 0000</bdi> (رقم تجريبي)</span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>مخزن الشفاء - أدوية ومستحضرات تجميل</b><br>
+    موقع تجريبي لعرض نموذج تصميم - جميع الأسماء والمنتجات والأسعار والأرقام placeholders
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.6 5.6.6 11.9c0 2 .5 4 1.5 5.7L.5 23.5l6-1.6c1.7.9 3.5 1.4 5.5 1.4 6.3 0 11.4-5.1 11.4-11.4S18.3.5 12 .5zm0 20.9c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.3 9.3 0 0 1-1.4-5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm5.2-7c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+var WA='https://wa.me/201000000000?text=';
+var products=[
+ {e:'☀️',c:'عناية بالبشرة',n:'واقي شمس SPF50+ (٥٠ مل)',p:185,o:230,off:'-٢٠٪',bg:'linear-gradient(135deg,#fff3d1,#ffe1a1)'},
+ {e:'✨',c:'عناية بالبشرة',n:'سيروم فيتامين سي (٣٠ مل)',p:240,o:null,bg:'linear-gradient(135deg,#ffe9ec,#ffd3da)'},
+ {e:'💊',c:'أدوية وفيتامينات',n:'فيتامين د3 - ٦٠ كبسولة',p:95,o:120,off:'خصم',bg:'linear-gradient(135deg,#e7f6f0,#cdeee0)'},
+ {e:'🧴',c:'عناية بالبشرة',n:'غسول يومي للبشرة الحساسة',p:160,o:null,bg:'linear-gradient(135deg,#e3f0ff,#cfe3ff)'},
+ {e:'💄',c:'كوزمتكس',n:'أحمر شفايف مطفي - درجات متعددة',p:120,o:150,off:'-٢٠٪',bg:'linear-gradient(135deg,#ffe9f4,#ffd0e6)'},
+ {e:'🍼',c:'مستحضرات أطفال',n:'حفاضات مقاس ٤ - عبوة ٤٨ قطعة',p:310,o:null,bg:'linear-gradient(135deg,#eef3ff,#dfe9ff)'},
+ {e:'🧼',c:'أدوية وفيتامينات',n:'جل مطهر لليدين (٥٠٠ مل)',p:45,o:60,off:'خصم',bg:'linear-gradient(135deg,#e7f6f0,#cdeee0)'},
+ {e:'🩺',c:'أدوية وفيتامينات',n:'جهاز قياس ضغط ديجيتال',p:850,o:990,off:'-١٥٪',bg:'linear-gradient(135deg,#f3ecff,#e4d8ff)'}
+];
+var grid=document.getElementById('prodGrid');
+products.forEach(function(x,i){
+  var msg=encodeURIComponent('السلام عليكم، عايز أطلب: '+x.n+' ('+x.p+' ج)');
+  grid.innerHTML+=
+  '<div class="prod reveal" style="transition-delay:'+(i%4*70)+'ms">'+
+    '<div class="thumb" style="background:'+x.bg+'">'+x.e+(x.off?'<span class="off">'+x.off+'</span>':'')+'</div>'+
+    '<div class="body"><span class="catname">'+x.c+'</span><h3>'+x.n+'</h3>'+
+    '<div class="price-row"><span class="price">'+x.p+' ج</span>'+(x.o?'<span class="old">'+x.o+' ج</span>':'')+'</div>'+
+    '<a class="order" target="_blank" rel="noopener" href="'+WA+msg+'"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.6 5.6.6 11.9c0 2 .5 4 1.5 5.7L.5 23.5l6-1.6c1.7.9 3.5 1.4 5.5 1.4 6.3 0 11.4-5.1 11.4-11.4S18.3.5 12 .5zm0 20.9c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.3 9.3 0 0 1-1.4-5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4z"/></svg>اطلب على واتساب</a>'+
+    '</div></div>';
+});
+document.getElementById('burger').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+});
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
